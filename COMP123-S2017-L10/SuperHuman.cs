@@ -7,7 +7,7 @@ using System.Text;
  * Name: Yanying Zhang
  * Date: July 11, 2017
  * Description: Demo for Lesson 9
- * Version: 0.6 - Added private method for SuperHuman class
+ * Version: 0.7 - Added GetPower method for SuperHuman class
  */
 namespace COMP123_S2017_L10
 {
@@ -123,5 +123,20 @@ namespace COMP123_S2017_L10
             Console.WriteLine("Not Implemented!");
         }
 
+        /// <summary>
+        /// This method returns a Power object that matches the power class
+        /// If the power is not found it returns the anonymous power
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public Power GetPower(string name)
+        {
+            int index = this._getPowerIndex(name);
+            if (index != -1)
+            {
+                return this.Powers[index];
+            }
+            return new Power("Unknown Power", 0);
+        }
     }
 }
