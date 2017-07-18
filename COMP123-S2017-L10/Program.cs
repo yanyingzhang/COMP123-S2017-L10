@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Name: Yanying Zhang
  * Date: July 11, 2017
  * Description: Demo for Lesson 9
- * Version: 0.5 - Add superVillain object and display it by using ToString method in the SuperHuman class
+ * Version: 0.6 - Compard the ranking of two power
  */
 namespace COMP123_S2017_L10
 {
@@ -34,8 +34,20 @@ namespace COMP123_S2017_L10
 
             //Console.WriteLine(superVillain._getPowerIndex("Spider Climbing"));
             //Console.WriteLine(superVillain._getPowerIndex("Change Time"));
-           
+            
 
+            if(superVillain.GetPower("Run fast") >superVillain.GetPower("Change Time"))
+            {
+                Console.WriteLine("Run fast is more powerful");
+            }
+            if(superVillain.GetPower("Run fast") < superVillain.GetPower("Change Time"))
+            {
+                Console.WriteLine("Run fast is more powerful");
+            }
+            if (superVillain.GetPower("Run fast") == superVillain.GetPower("Change Time"))
+            {
+                Console.WriteLine("Run fast and change time are same powerful");
+            }
 
             //if (superHero is SuperHero)
             //{
