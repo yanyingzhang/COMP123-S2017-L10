@@ -7,7 +7,7 @@ using System.Text;
  * Name: Yanying Zhang
  * Date: July 11, 2017
  * Description: Demo for Lesson 9
- * Version: 0.1 - Create the Power class
+ * Version: 0.2 - Overloaded the > and < operators the the power class
  */
 namespace COMP123_S2017_L10
 {
@@ -32,6 +32,28 @@ namespace COMP123_S2017_L10
         {
             this.Name = name;
             this.Rank = rank;
+        }
+
+        //PUBLIC OVERLOADED OPERATORS
+        /// <summary>
+        /// This method overloads the > for use with the power class
+        /// </summary>
+        /// <param name="ls"></param>
+        /// <param name="rs"></param>
+        /// <returns>Returns true is ls.Rank > rs.Rank</returns>
+        public static bool operator >(Power ls, Power rs)
+        {
+            return (ls.Rank > rs.Rank);
+        }
+        /// <summary>
+        /// This method overloads the < for use with the power class
+        /// </summary>
+        /// <param name="ls"></param>
+        /// <param name="rs"></param>
+        /// <returns>Returns true is ls.Rank < rs.Rank </returns>
+        public static bool operator <(Power ls, Power rs)
+        {
+            return (ls.Rank < rs.Rank);
         }
     }
 }

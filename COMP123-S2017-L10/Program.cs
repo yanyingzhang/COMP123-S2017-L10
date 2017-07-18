@@ -30,6 +30,32 @@ namespace COMP123_S2017_L10
             superVillain.AddPower("Run fast", 19);
             Console.WriteLine(superVillain.ToString());
             Console.WriteLine("Villain: " + superVillain.Malice);
+            Console.WriteLine();
+
+            //if (superHero is SuperHero)
+            //{
+            //    Console.WriteLine("SuperHero is a superHero");
+            //}
+            //if (superHero is SuperHuman)
+            //{
+            //    Console.WriteLine("SuperHero is a superHuman");
+            //}
+            //if (superHero is Human)
+            //{
+            //    Console.WriteLine("SuperHero is a Human");
+            //}
+            //if (superHero is object)
+            //{
+            //    Console.WriteLine("SuperHero is an object");
+            //}
+            //if (superHero is IHasKarma)
+            //{
+            //    Console.WriteLine("SuperHero is a IHasKarma");
+            //}
+            //if (superHero is IHasMalice)
+            //{
+            //    Console.WriteLine("SuperHero is a IHasMalice");
+            //}
         }
     }
 }
