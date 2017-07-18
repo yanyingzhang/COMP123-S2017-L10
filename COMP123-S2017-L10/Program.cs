@@ -32,6 +32,10 @@ namespace COMP123_S2017_L10
             Console.WriteLine("Villain: " + superVillain.Malice);
             Console.WriteLine();
 
+            //Console.WriteLine(superVillain._getPowerIndex("Spider Climbing"));
+            //Console.WriteLine(superVillain._getPowerIndex("Change Time"));
+
+
             //if (superHero is SuperHero)
             //{
             //    Console.WriteLine("SuperHero is a superHero");

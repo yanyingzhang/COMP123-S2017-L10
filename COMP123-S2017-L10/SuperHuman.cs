@@ -7,7 +7,7 @@ using System.Text;
  * Name: Yanying Zhang
  * Date: July 11, 2017
  * Description: Demo for Lesson 9
- * Version: 0.5 - Added Stub Method dISPLAYsKILLS TO CONFORM to Human Abstract class
+ * Version: 0.6 - Added private method for SuperHuman class
  */
 namespace COMP123_S2017_L10
 {
@@ -46,6 +46,30 @@ namespace COMP123_S2017_L10
         private void _initialize()
         {
             this._prowers = new List<Power>(); // creates an empty list
+        }
+
+        /// <summary>
+        /// This private method returns the index of the power name in the power list
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        private int _getPowerIndex(string name)
+        {
+            int index = 0;
+            foreach(Power power in this.Powers)
+            {
+                if (name.Equals(power.Name))
+                {
+                    break;
+                }
+                index++;
+
+                if(this.Powers.Count == index)
+                {
+                    index = -1; //this means that we did not find the power in the list
+                }
+            }
+            return index;
         }
 
         //PUBLIC METHODS
