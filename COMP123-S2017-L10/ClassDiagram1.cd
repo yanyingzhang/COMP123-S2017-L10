@@ -10,19 +10,19 @@
   <Class Name="COMP123_S2017_L10.SuperHuman">
     <Position X="2.5" Y="1.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAEAAAAIAAAAAAACAABQAAIEAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAAEAAAAIAAAAAAACQABQAAIEAAAAAA=</HashCode>
       <FileName>SuperHuman.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="COMP123_S2017_L10.Power">
-    <Position X="8.5" Y="4.25" Width="1.5" />
+    <Position X="8.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAACAAgQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Power.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="COMP123_S2017_L10.SuperHero">
-    <Position X="5" Y="1.25" Width="1.5" />
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SuperHero.cs</FileName>
@@ -30,10 +30,18 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="COMP123_S2017_L10.SuperVillain">
-    <Position X="5" Y="3.75" Width="1.5" />
+    <Position X="5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>SuperVillain.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="COMP123_S2017_L10.AntiHero">
+    <Position X="6.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>AntiHero.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
