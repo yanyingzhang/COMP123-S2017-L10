@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Name: Yanying Zhang
  * Date: July 11, 2017
  * Description: Demo for Lesson 9
- * Version: 0.6 - Compard the ranking of two power
+ * Version: 0.7 - Implement of AntiHero class
  */
 namespace COMP123_S2017_L10
 {
@@ -32,11 +32,14 @@ namespace COMP123_S2017_L10
             Console.WriteLine("Villain: " + superVillain.Malice);
             Console.WriteLine();
 
-            //Console.WriteLine(superVillain._getPowerIndex("Spider Climbing"));
-            //Console.WriteLine(superVillain._getPowerIndex("Change Time"));
-            
+            AntiHero badman = new AntiHero("Badman", 20, 20);
+            badman.AddPower("Super Intelligence",50);
+            Console.WriteLine(badman.ToString());
+            Console.WriteLine("Karma: " + badman.Malice);
+            Console.WriteLine("Villain: " + badman.Karma);
 
-            if(superVillain.GetPower("Run fast") >superVillain.GetPower("Change Time"))
+
+            if (superVillain.GetPower("Run fast") >superVillain.GetPower("Change Time"))
             {
                 Console.WriteLine("Run fast is more powerful");
             }
@@ -48,31 +51,7 @@ namespace COMP123_S2017_L10
             {
                 Console.WriteLine("Run fast and change time are same powerful");
             }
-
-            //if (superHero is SuperHero)
-            //{
-            //    Console.WriteLine("SuperHero is a superHero");
-            //}
-            //if (superHero is SuperHuman)
-            //{
-            //    Console.WriteLine("SuperHero is a superHuman");
-            //}
-            //if (superHero is Human)
-            //{
-            //    Console.WriteLine("SuperHero is a Human");
-            //}
-            //if (superHero is object)
-            //{
-            //    Console.WriteLine("SuperHero is an object");
-            //}
-            //if (superHero is IHasKarma)
-            //{
-            //    Console.WriteLine("SuperHero is a IHasKarma");
-            //}
-            //if (superHero is IHasMalice)
-            //{
-            //    Console.WriteLine("SuperHero is a IHasMalice");
-            //}
+            
         }
     }
 }
